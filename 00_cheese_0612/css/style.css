@@ -1,0 +1,773 @@
+@charset "utf-8"
+
+html{
+    font-size: 62.5%; /* 16px × 62.5% = 10px*/    
+}
+
+body{
+    color: #222222;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.0rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* ------------------------
+    header
+ * ------------------------ */
+ .wrapper{
+    max-width: 1120px;
+    margin: auto;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 114px;
+}
+
+.btn-trigger{
+    display: none;
+}
+
+/* ナビゲーションリスト */
+.nav-list{
+    display: flex;
+}
+
+.nav-item{
+    margin: 0 0 0 50px;
+}
+
+.nav-item>a{
+    color: #222222;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+/* ------------------------
+    hero-image
+ * ------------------------ */
+
+/*画像にテキストを重ねる*/
+.hero-image{ 
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-image__text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0 ); 
+    color: #fff;
+}
+
+.hero-image__title{
+    font-size: 2.0rem;
+    margin: 0 0 30px;
+}
+
+.hiro-image__subtitle{
+    font-size: 1.6rem;
+}
+
+/* ------------------------
+    ABOUT
+ * ------------------------ */
+.about{
+    padding: 60px 0 0;
+}
+
+.about-wrapper{
+    max-width: 700px;
+    margin: 0 auto 80px;
+}
+
+/* 英語見出しのフォント */
+.about__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+}
+
+/* 日本語見出しのフォント */
+.about__subtitle{
+    margin: 0 0 60px;
+    font-size: 1.4rem;
+}
+
+/* 説明文の段落間隔 下40px */
+.about__detail{
+    margin: 0 0 40px;
+}
+
+/* 説明文の行間*/
+.about_lineheight{
+    line-height: 2.0;
+}
+
+/* 横並び画像 */
+.about__eyecatch{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ------------------------
+    COURSE
+ * ------------------------ */
+.course{
+    padding: 60px 0 0;
+}
+
+.course__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #222222;
+}
+
+.course__text{
+    line-height: 1.75;
+    margin: 0 auto 60px;
+}
+
+.course_list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.course_item{
+    max-width: 600px;
+}
+
+.course_detail{
+    max-width: 600px;
+    height: 404px;
+    background-color:#fafafa;
+}
+
+
+.course_name{
+    margin:120px 0 40px 50px ;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.course_name.text_yose{
+    text-align: right;
+    margin:120px 50px 40px 100px ;
+
+}
+
+.course_memo{
+    max-width: 600px;
+    margin:0 100px 0 50px ;
+    line-height: 1.5;
+}
+
+.course_memo.text_yose{
+    text-align: right;
+    margin:0 50px 0 100px ;
+
+}
+
+
+/* ------------------------
+    NEWS
+ * ------------------------ */
+.news{
+    padding: 60px 0;
+}
+
+.news_wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.news__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+}
+
+.news__subtitle{
+    margin: 0 0 60px;
+    font-size: 1.4rem;
+}
+
+.news__list{
+    display: flex;
+    margin: 0 120px;
+}
+
+.news_item{
+    width: 33.333%;
+
+}
+
+.news__eyecatch{
+    margin: 0 0 30px;
+    padding: 0 15px 0;
+}
+
+.news__eyecatch:hover {
+	opacity: 0.6;
+}
+
+.news__day{
+    margin: 30px 0 24px;
+
+}
+
+.news__info{
+    max-width: 300px;
+    line-height: 1.75;
+
+}
+
+ /* Moreボタン */
+.btn{
+    display: block;
+    text-decoration: none;
+    width: 300px;
+    margin: 0 auto;
+    padding: 21px 0;
+    background-color: #ffd61a;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+	opacity: 0.6;
+}
+
+/* ------------------------
+    ACCESS
+ * ------------------------ */
+.access{
+    padding: 60px 0 30px;
+    background-color: #fafafa;
+    margin:auto;
+    max-width: 1200px;
+}
+
+/* 英語見出しのフォント */
+.access__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #222222;
+}
+
+/* 日本語見出しのフォント */
+.about__subtitle{
+    margin: 0 0 60px;
+    font-size: 1.4rem;
+}
+
+.access_map{
+    width: 1200px;
+    height: 300px;
+    border: 0;
+    margin: 0 0 60px;
+}
+
+.access-address{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 650px;
+}
+
+.map-title{
+    width: 150px;
+    margin: 0 0 30px 100px;
+    text-align-last: left;
+}
+
+.map-detail{
+    width: 400px;
+    margin: 0 0 30px;
+    text-align-last: left;
+}
+
+
+/* ------------------------
+    CONTACT
+ * ------------------------ */
+.contact{
+    padding: 60px 0 140px;
+}
+
+.contact__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #222222;
+
+}
+
+.contact__subtitle{
+    margin: 0 0 60px;
+    font-size: 1.4rem;   
+
+}
+
+.contact_text{
+    margin: 0 0 30px;
+    line-height: 1.75;
+}
+
+.contact_alert{
+    margin: 0 0 70px;
+    line-height: 1.75;
+}
+
+.form-wrapper{
+    max-width: 640px;
+    margin: auto;
+
+}
+
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+}
+
+.form-title{
+    width: 160px;
+    padding: 10px 64px 10px 16px;
+
+    border-top: 1px solid #bfbfbf;
+}
+
+.form-item{
+    width: 398px;
+    border-top: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+}
+
+select{
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    border: solid 1px #bfbfbf;
+    width: 335px;
+    height: 36px;
+    margin: 8px;
+    padding: 0 0 0 5px;
+}
+
+.check_line{ 
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    margin: 8px 5px 24px 8px;
+    border: solid 1px #bfbfbf;
+    width: 16px;
+    height: 16px;
+    position:relative;
+    top:7px
+}
+
+input[type="checkbox"]:checked::before{ /*チェックされた場合*/
+    content: "";
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+    border-color:#bfbfbf; 
+    background-color: #bfbfbf;
+
+}
+
+/* チェックが入った時のレ点 */
+input[type="checkbox"]:checked::after{
+    content: "";
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 8px;
+    margin-top: -8px;
+    top: 50%;
+    left: 3px;
+    transform: rotate(-45deg);
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    border-color:  #707070; 
+}
+
+
+
+.form-parts{
+    border: solid 1px #bfbfbf;
+    font-size: 1.0rem;
+    width: 328px;
+    height: 34px;
+    margin: 8px;
+}
+
+
+.check-text{
+   vertical-align: middle;
+}
+
+.form-textarea{
+    border: solid 1px #bfbfbf;
+    font-size: 1.0rem;
+    width: 328px;
+    margin: 8px;
+}
+
+.under_line{
+    border-bottom: 1px solid #bfbfbf; 
+}
+
+.btn-submit{
+    appearance: none;  /*ベンダープリフィクス記述*/
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    border:none;
+}
+
+
+ /* ------------------------
+    footer
+ * ------------------------ */
+
+ .footer{
+    padding: 30px 0;
+    background-color: #707070;
+}
+
+.copyrights{
+    color: #fff;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:640px) {
+ 
+body{
+    font-size: 0.8rem;
+}
+
+/* ------------------------
+    header
+ * ------------------------ */
+.header{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.header-wrapper{
+    /* position: absolute; */
+    display: block;
+    height: auto;
+    padding: 10px 0 0 5px;
+    margin: 0 0 10px;
+    width:60%;
+    /* z-index: 100; */
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 214, 26,0.3);  */
+
+}
+
+/* メニューボタン */
+.btn-trigger{
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    display: block;
+    position: fixed;
+    top: 16px;
+    right: 12px;
+    width: 30px;
+    z-index: 100;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* .btn-trigger.active use:nth-of-type(1) {
+    transform:translateY(30px) rotate(-45deg) ;
+}
+
+.btn-trigger.active use:nth-of-type(2) {
+    opacity: 0;
+}
+
+.btn-trigger.active use:nth-of-type(3) {
+    transform:translateX(35px) translateY(-15px) rotate(45deg) ;
+}  */
+
+/* ナビゲーションリスト*/
+.navigation{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 214, 26,0.5);
+}
+
+.nav-list{
+    display: block;
+    padding: 84px 0 0;
+}
+.nav-item{
+    margin: 0 0 60px;
+    text-align: center;
+}
+.nav-item>a{
+    display: block;
+    font-size: 2.1rem;
+}
+
+
+/* ------------------------
+    hero-image
+ * ------------------------ */
+.hero-image{
+    width: 100%;
+    margin: 75px 0 0;
+}
+
+.hero-image__text{
+    white-space: nowrap;
+    /* top:65%; */
+    /* left: 50%;
+    transform: translate3d(-50%,-50%,0 );  */
+
+}
+
+.hero-image__title{
+    font-size: 1.2rem;
+
+}
+
+.hiro-image__subtitle{
+    font-size: 1.0rem;
+
+}
+
+/* ------------------------
+    About
+ * ------------------------ */
+.about{
+    padding: 30px 10px 0;
+
+}
+.about-wrapper{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 30px;
+}
+
+.about__subtitle{
+    margin:0 0 30px;
+}
+
+.about__title{
+    margin:0 0 15px;
+}
+
+.about__detail{
+    margin: 0 0 20px;
+}
+
+.about_lineheight{
+    line-height: 1.2;
+}
+
+.about__eyecatch{
+    display: block;
+    width: 100%;
+}
+
+ /* ------------------------
+    course
+ * ------------------------ */
+ .course{
+    padding: 30px 10px 0;
+ }
+ 
+ .course__title{
+    margin: 0 0 15px;
+}
+
+.course__text{
+    margin: 0 0 20px;
+}
+
+.course_list{
+    width: 100%;
+    flex-direction: column;
+}
+
+.course_detail{
+    height: 230px;
+}
+
+.course_name{
+    margin: 30px auto;
+}
+
+.course_name.text_yose{
+    margin: 30px auto;
+    text-align: left;
+}
+
+.course_memo{
+    margin: 0;
+    width: 100%;
+}
+
+.course_memo.text_yose{
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.order3{
+    order:4;
+}
+
+.order4{
+    order:3;
+}
+
+.order5{
+    order:5;
+}
+
+.order6{
+    order:6;
+}
+
+/* ------------------------
+    news
+ * ------------------------ */
+.news{
+    padding: 30px 10px 30px;
+
+}
+
+.news_wrapper{
+    margin: 0 0 20px;
+}
+
+.news__list{
+    display: block;
+    margin: 0;
+}
+
+.news__eyecatch{
+    /* margin: 0 auto 30px; */
+    padding: 0 0 0 40px ;
+}
+
+.news__day{
+    width: 300px;
+    margin: 20px 0 24px;
+}
+
+
+/* ------------------------
+    access
+ * ------------------------ */
+.access{
+    padding: 30px 10px 30px;
+}
+
+.access_map{
+    width: 100%;
+}
+
+.access-address{
+    display: block;
+    width: 100%;
+}
+
+.map-title{
+    width: 300px;
+    position: relative;
+    margin:0 auto 10px;
+    font-weight: bold;
+}
+
+.map-detail{
+    width: 280px;
+    margin:0 auto 20px;
+}
+
+ /* ------------------------
+    contact
+ * ------------------------ */
+ .contact{
+    padding: 30px 10px 30px;
+
+}
+
+.form-title{
+    border-top: none;
+    width: 100%;
+    padding: 10px 70px 10px 10px;
+    font-weight: bold;
+}
+
+.form-item{
+    border-top:none;
+    border-left: none;
+}
+
+.under_line{
+    display: none;
+}
+
+ /* ------------------------
+    footer
+ * ------------------------ */
+ .footer{
+    padding: 30px 10px;
+}
+
+.copyrights{
+    font-size: 0.8rem;
+
+
+}
